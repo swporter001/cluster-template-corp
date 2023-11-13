@@ -61,11 +61,11 @@ nodepools:
   # machineDeploymentAnnotations: {}
 
   name: harvester-nodepool-1
-  diskSize: 40
+  diskSize: 100
   diskBus: virtio
-  cpuCount: 4
-  memorySize: 8
-  networkName: default/network-name-1
-  imageName: default/image-rand
-  vmNamespace: default
-  sshUser: ubuntu
+  cpuCount: 2
+  memorySize: 4
+  networkName: harvester-public/vlan253
+  imageName: harvester-public/jammy-server-cloudimg-amd64.img
+  vmNamespace: fleet-default
+  sshUser: sporter
